@@ -2,7 +2,7 @@
   "name": "procadmin",
   "version": "1.0.0",
   "description": "managing system process and services via node",
-  "main": "index.js",
+  "main": "index.coffee",
   "scripts": {
     "test": "mocha"
   },
