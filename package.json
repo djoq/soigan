@@ -13,6 +13,7 @@
   "author": "daniel oquinn",
   "license": "MIT",
   "dependencies": {
+    "coffee-script": "^1.12.3",
     "restler": "^3.4.0",
     "say.js": "^1.1.0"
   }
