@@ -10,14 +10,13 @@ issue = (cmd) ->
   
 validate = ->
   rest.get(uri[0]).on 'complete', (data, response) ->
-    say "Response from health check ->", data
-    say "response code ->", response.statusCode
+    say "[SERVER HEALTH]", response.statusCode
     if response.statusCode != 200
       say "you should restart the server with a bash call"
       issue "/etc/init.d/apache2 stop && /etc/init.d/apache2 start && /etc/init.d/tomcat7 stop && /etc/init.d/tomcat7 start"
-      setTimeout validate, 10000
+      setTimeout validate, 60000
     else
-      setTimeout validate, 2000 
+      setTimeout validate, 10000 
     return
   return 
 
