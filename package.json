@@ -1,0 +1,19 @@
+{
+  "name": "procadmin",
+  "version": "1.0.0",
+  "description": "managing system process and services via node",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "process",
+    "management"
+  ],
+  "author": "daniel oquinn",
+  "license": "MIT",
+  "dependencies": {
+    "restler": "^3.4.0",
+    "say.js": "^1.1.0"
+  }
+}
